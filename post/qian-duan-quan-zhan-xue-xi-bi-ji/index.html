@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>前端全栈学习笔记 | RichardTao</title>
-<link rel="shortcut icon" href="https://richardtaocong.github.io/RichardTao.github.io/favicon.ico?v=1585136534931">
+<link rel="shortcut icon" href="https://richardtaocong.github.io/RichardTao.github.io/favicon.ico?v=1585137378494">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://richardtaocong.github.io/RichardTao.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="前端全栈学习笔记 | RichardTao - Atom Feed" href="https://richardtaocong.github.io/RichardTao.github.io/atom.xml">
@@ -28,7 +28,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://richardtaocong.github.io/RichardTao.github.io">
-  <img class="avatar" src="https://richardtaocong.github.io/RichardTao.github.io/images/avatar.png?v=1585136534931" alt="">
+  <img class="avatar" src="https://richardtaocong.github.io/RichardTao.github.io/images/avatar.png?v=1585137378494" alt="">
   </a>
   <h1 class="site-title">
     RichardTao
@@ -907,7 +907,7 @@ http.createServer((request, response) =&gt; {
   &quot;license&quot;: &quot;ISC&quot;
 }
 </code></pre>
-<figure data-type="image" tabindex="1"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5C2020-02-08_15-36-55.png" alt="文件初始" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-08_15-36-55.png" alt="" loading="lazy"></figure>
 <h4 id="重要的属性">重要的属性</h4>
 <ul>
 <li>
@@ -1316,7 +1316,7 @@ db.query(`insert into user(username,password) values('${username}','${password}'
     }
 });
 </code></pre>
-<figure data-type="image" tabindex="2"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5C2020-02-10_21-30-29.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-10_21-30-29.png" alt="" loading="lazy"></figure>
 <h4 id="异步操作">异步操作</h4>
 <pre><code class="language-js">//与http配合
 http.createServer((req, res) =&gt; {
@@ -1883,7 +1883,6 @@ module.exports = (req, res, next) =&gt; {
  */
 server.use(express.static('./static/'));
 </code></pre>
-<figure data-type="image" tabindex="3"><img src="F:%5C%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CCut%5C%E6%88%AA%E5%9B%BE%5C2020-02-13_16-53-36.png" alt="static" loading="lazy"></figure>
 <h4 id="body-parser"><code>body-parser</code></h4>
 <blockquote>
 <p>对于<code>express</code>而言，处理不同数据的方式有以下几种：</p>
@@ -1941,7 +1940,7 @@ server.post('/reg',(req,res)=&gt;{
 });
 
 </code></pre>
-<figure data-type="image" tabindex="4"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5C2020-02-13_16-58-00.png" alt="filesMsg" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-13_16-58-00.png" alt="" loading="lazy"></figure>
 <h4 id="cookie-parser"><code>cookie-parser</code></h4>
 <blockquote>
 <p>取出<code>cookie</code>中的数据以及向其中存储数据</p>
@@ -1980,10 +1979,8 @@ app.get('/getCookie', (req, res) =&gt; {
     res.send('Ok');
 });
 </code></pre>
-<figure data-type="image" tabindex="5"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5C2020-02-13_18-59-56.png" alt="" loading="lazy"></figure>
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4419329"> <label class="task-list-item-label" for="task-item-4419329"> `res.cookie('name','value',options)`</label></li>
-</ul>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-13_18-59-56.png" alt="" loading="lazy"></figure>
+<p><code>res.cookie('name','value',options)</code></p>
 <p>其中 <code>options</code>要求是要 json 格式：有以下选项</p>
 <ul>
 <li><strong>domain</strong>: 域名。设置子域名（二级域名）是否可以访问 cookie。 例：<code>domain:'. 主域名' name=value：键值对</code>，可以设置要保存的 Key/Value，注意这里的 name 不能和其他属性项的名字一样</li>
@@ -2026,7 +2023,7 @@ app.get('/getSession',(req,res)=&gt;{
     res.send(`欢迎你第${req.session['mysId']}次访问本站,你的余额为${req.session['mount']}`);
 });
 </code></pre>
-<figure data-type="image" tabindex="6"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5C2020-02-13_19-23-34.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-13_19-23-34.png" alt="" loading="lazy"></figure>
 <h2 id="510-框架-koa">5.10 框架-KOA</h2>
 <blockquote>
 <p>参考链接：</p>
@@ -2163,7 +2160,7 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 </code></pre>
-<img src="E:\笔记\Node.js\images\KOA\8.png" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/8.png" style="zoom: 80%;" />
 <h5 id="嵌套路由">嵌套路由</h5>
 <blockquote>
 <p>适用于大型开发，此时就可以将不同级别的路由分支放在不同的文件中，以方便进行管理</p>
@@ -2222,7 +2219,7 @@ router.use('/user',userRouter.routes());
 app.use(router.routes());
 
 </code></pre>
-<figure data-type="image" tabindex="7"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5CKOA%5C6.png" alt="路由分置" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/6.png" alt="" loading="lazy"></figure>
 <h5 id="动态路由">动态路由</h5>
 <blockquote>
 <p>通过在<code>url</code>中设置<code>:VAR</code>的形式来设置动态的路由，这个参数的值放在JSON<code>ctx.params</code>中</p>
@@ -2264,7 +2261,7 @@ app.use(router.routes());
 <ul>
 <li>引申问题：该方法与<code>query</code>传入参数的形式有何优势、劣势？</li>
 </ul>
-<figure data-type="image" tabindex="8"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5CKOA%5C9.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/9.png" alt="" loading="lazy"></figure>
 <h4 id="static-2"><code>static</code></h4>
 <blockquote>
 <p>需要第三方下载的中间件，是用于处理客户端访问静态资源的请求的</p>
@@ -2332,7 +2329,7 @@ router.get('*', static('./static', {
 
 app.use(router.routes());
 </code></pre>
-<figure data-type="image" tabindex="9"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5CKOA%5C13-2.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/13-2.png" alt="" loading="lazy"></figure>
 <h4 id="koa-better-body"><code>koa-better-body</code></h4>
 <blockquote>
 <p>十分好用，能够处理<code>post &amp; File</code>数据</p>
@@ -2360,7 +2357,7 @@ app.use(async ctx=&gt;{
     ctx.body = 'Done';
 });
 </code></pre>
-<figure data-type="image" tabindex="10"><img src="E:%5C%E7%AC%94%E8%AE%B0%5CNode.js%5Cimages%5CKOA%5C14-2.png" alt="Result" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/14-2.png" alt="" loading="lazy"></figure>
 <h4 id="cookie-2"><code>Cookie</code></h4>
 <blockquote>
 <p>该中间件是<code>KOA</code>自带的，它包含有两个函数</p>
@@ -2499,9 +2496,9 @@ app.use(async ctx =&gt; {
     }
 });
 </code></pre>
-<img src="E:\笔记\Node.js\images\KOA\17-3.png" alt="普通错误" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/17-3.png" style="zoom:67%;" />
 <p>同理，在<code>router</code>中我们也可以这样去处理错误：</p>
-<img src="E:\笔记\Node.js\images\KOA\17-4.png" alt="router错误" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/17-4.png" style="zoom:67%;" />
 <h3 id="5103-服务器渲染">5.10.3 服务器渲染</h3>
 <h4 id="渲染概念">渲染概念</h4>
 <blockquote>
@@ -2526,16 +2523,16 @@ app.use(async ctx =&gt; {
 <p>主要是使用缩进作为层级的标志</p>
 <p><a href="https://pugjs.org/zh-cn/api/getting-started.html">官方文档</a></p>
 </blockquote>
-<img src="E:\笔记\Node.js\images\渲染\3.png" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/3.png" style="zoom:67%;" />
 <h4 id="ejs-更常用"><code>ejs</code>-更常用</h4>
 <blockquote>
 <p><a href="https://ejs.bootcss.com/#docs">官方文档</a></p>
 </blockquote>
-<img src="E:\笔记\Node.js\images\渲染\5-1.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/5-1.png" style="zoom:67%;" />
 <ul>
 <li>设置的属性参考：</li>
 </ul>
-<img src="E:\笔记\Node.js\images\渲染\6.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/ejs.png" style="zoom:67%;" />
 <h2 id="511-综合项目">5.11 综合项目</h2>
 <blockquote>
 <p><a href="E:%5CCode%5CJS%5CKOA_Server">项目</a>功能完成的是一个博客管理系统，但是功能还未全部实现</p>
@@ -2543,7 +2540,7 @@ app.use(async ctx =&gt; {
 <p>前台的文章、轮播图、主题功能完成，搜索等功能还未实现</p>
 </blockquote>
 <h3 id="5111-补充分页功能">5.11.1 补充：分页功能</h3>
-<figure data-type="image" tabindex="11"><img src="F:%5C%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%5CCut%5C%E6%88%AA%E5%9B%BE%5C2020-03-06_20-50-00.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-03-06_20-50-00.png" alt="" loading="lazy"></figure>
 <ul>
 <li>在<code>router</code>的末尾加上<code>page=?</code>的请求</li>
 <li>使用<code>sql</code>语句的拼接，利用<code>limit</code>来进行分页</li>
@@ -3129,7 +3126,7 @@ test('fab 7', () =&gt; {
 <blockquote>
 <p>生命周期</p>
 </blockquote>
-<figure data-type="image" tabindex="12"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/lifecycle.png" alt="生命周期" loading="lazy"></figure>
+<figure data-type="image" tabindex="11"><img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/lifecycle.png" alt="生命周期" loading="lazy"></figure>
 <h2 id="71-基本概念">7.1 基本概念</h2>
 <blockquote>
 <p><code>vue</code>的核心是<strong>数据</strong>，使得程序员能够专注于处理数据，而不是表现层的繁杂工作</p>
@@ -3691,7 +3688,7 @@ style_json: {
 <ul>
 <li>帮助文档</li>
 </ul>
-<img src="E:\笔记\Node.js\images\2020-02-11_19-44-39.png" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/RichardTaocong/Images/master/data/2020-02-11_19-44-39.png" style="zoom:50%;" />
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
